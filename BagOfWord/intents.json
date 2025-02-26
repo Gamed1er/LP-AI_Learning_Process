@@ -1,0 +1,75 @@
+{
+    "intents_list": [
+        {
+            "tag": "greeting",
+            "patterns": [
+              "Hello", 
+              "Hi", 
+              "Good evening", 
+              "Hey there", 
+              "Is this the entrance?"
+            ],
+            "responses": [
+              "Good day! How can I assist you?",
+              "Hello, please state your purpose for entry.",
+              "Welcome! Do you have an appointment?"
+            ]
+        },
+        {
+            "tag": "entry_request",
+            "patterns": [
+              "Can I come in?", 
+              "I need to enter", 
+              "May I go inside?", 
+              "I have an appointment"
+            ],
+            "responses": [
+              "Please show your ID and state your purpose.",
+              "Do you have an appointment or visitor pass?",
+              "Let me check the guest list. Please wait a moment."
+            ]
+        },
+        {
+            "tag": "id_check",
+            "patterns": [
+              "Here's my ID", 
+              "This is my pass", 
+              "I'm a staff member", 
+              "I have a visitor badge"
+            ],
+            "responses": [
+              "Thank you. Please proceed.",
+              "Your ID is verified. You may enter.",
+              "Let me scan your pass... Alright, you're good to go."
+            ]
+        },
+        {
+            "tag": "exit",
+            "patterns": [
+              "I'm leaving", 
+              "Goodbye", 
+              "See you later", 
+              "I'm done here"
+            ],
+            "responses": [
+              "Goodbye! Stay safe.",
+              "See you next time!",
+              "Take care and have a great day!"
+            ]
+        },
+        {
+            "tag": "denial",
+            "patterns": [
+              "I forgot my ID", 
+              "I don't have a pass", 
+              "Can I enter without a badge?", 
+              "I lost my visitor pass"
+            ],
+            "responses": [
+              "Sorry, but I can't let you in without proper identification.",
+              "Please contact the front desk for assistance.",
+              "I'm afraid you'll need to verify your identity before entering."
+            ]
+        }
+    ]
+}
