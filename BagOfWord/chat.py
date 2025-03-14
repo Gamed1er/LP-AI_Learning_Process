@@ -11,7 +11,7 @@ with open('BagOfWord\intents.json','r') as f:
     intents_box = json.load(f)
 
 #引入學習過的模型
-FILE = 'data.pth'
+FILE = 'BagOfWord\data.pth'
 data = torch.load(FILE)
 input_size = data["input_size"]
 hidden_size = data["hidden_size"]
