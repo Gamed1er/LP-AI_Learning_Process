@@ -28,11 +28,11 @@ model.eval()
 #--設計機器人對話--#
 
 #機器人名稱與起始招呼語
-bot_name = "Guard"
-print("I'm the guard of this office.")
+bot_name = "[Guard]"
+print("[Guard] : I'm the guard of this office.")
 
 while True:
-    sentence = input("You: ")
+    sentence = input("[ You ] : ")
     if sentence == "quit":
         break
     
@@ -55,6 +55,6 @@ while True:
     if prob.item() > 0.8:
         for intent in intents_box['intents_list']:
             if tag == intent["tag"]:
-                print(f"{bot_name}: {random.choice(intent['responses'])}")
+                print(f"{bot_name} : {random.choice(intent['responses'])}")
     else:
         print(f"{bot_name}: I do not understand...")
